@@ -5,11 +5,12 @@ This project aims to show a business use case of Power Automate. By leveraging P
 ## Project Creation Walkthrough
 ### Folder Structure
 1. Create the PA_Financial_Import Project Folder
-2. Create the PA_Import_Folder
-  - This will create the area in which you will place all of your raw data files
-  - PA stands for Power Automate
-3. Create the Power_Automate_Financial_Information
-  - This will be the file in which you utilize Power Automate
-4. 
+   - Create the rest of the files in this folder
+3. Create the PA_Import_Folder
+   - This will create the area in which you will place all of your raw data files
+   - PA stands for Power Automate
+4. Create the Power_Automate_Financial_Information
+   - This will be the file in which you utilize Power Automate
+5. 
 ### Raw Data Creation via Excel
 I created the 
