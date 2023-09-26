@@ -9,7 +9,8 @@ This project aims to show a business use case of Power Automate. By leveraging P
 4. The Random_Account_Generator is the Excel file that, when refreshed, can create multiple files for testing.
 
 
-## Random_Account_Generator - Summary
+## Random_Account_Generator
+### Summary
 The Random_Account_Generator allows users to create unlimited accounts to test the Power Automate process. Follow the below steps:
 1. Open the Excel File
 2. Press the F9 Key
@@ -20,4 +21,4 @@ The Random_Account_Generator allows users to create unlimited accounts to test t
 
 _In the professional world, place your raw data in the PA_Import_Folder instead of the sample data._
 
-## Random_Account_Generator - Creation
+### Creation
