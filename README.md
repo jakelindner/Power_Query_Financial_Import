@@ -22,8 +22,9 @@ The Random_Account_Generator allows users to create unlimited accounts to test t
 _In the professional world, place your raw data in the PA_Import_Folder instead of the sample data._
 
 ### Creation
-ACCOUNT_NUMBER: =CONCATENATE("_",RANDBETWEEN(1000000000,9999999999))
+- ACCOUNT_NUMBER: =CONCATENATE("_",RANDBETWEEN(1000000000,9999999999))
    - CONCATENATE combines the presented variables
    - The underscore is used so Excel sees the data as text, not a number. (This can be helpful professionally when storing account numbers; if you add an underscore to the front, excel will not reformat the number.)
    - RANDBETWEEN generates a random number between the two variables. I chose 1000000000 and 9999999999 to restrict the account number to ten characters.
-DOB: =RANDBETWEEN(DATE(1975,1,1),DATE(2001,12,31))
+- DOB: =RANDBETWEEN(DATE(1975,1,1),DATE(2001,12,31))
+   - TEST
