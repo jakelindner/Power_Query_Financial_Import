@@ -83,14 +83,6 @@ In this example, a pivot table has a custom column that calculates =CHARGE_OFF_A
 _This project is designed to teach specifically Power Automate; please refer to other study material for Pivot Tables & Pivot Charts._
 
 # Summary
-Power Automate is a business process automation (BPA) tool that can help your organization in several ways. Here are some of the benefits of using Power Automate:
-
-__Improved efficiency and productivity:__ By automating repetitive tasks, Power Automate streamlines your business processes, reduces errors, and accelerates high-level operations1.
-__Reduced time and costs:__ Automation helps your business save time and money by eliminating manual paper processes and reallocating resources to more important matters.
-__Simple data and document management:__ Power Automate simplifies document management by organizing all your documents and data in a single location.
-__Visibility and transparency:__ Automation solutions ensure that best practices are followed, governance is enforced, and provide visibility into your business processes1.
-These are just a few of the many benefits that Power Automate offers to businesses. It can enhance operational outcomes, improve overall performance, and enable business transformation.
-
-Please note that this is just a brief summary, and there may be additional advantages specific to your organization’s needs.
+Power Query is a data transformation and data preparation engine. It comes with a graphical interface for getting data from sources and a Power Query Editor for applying transformations.
 
 _Summary collected from Bing Chat/AI_
