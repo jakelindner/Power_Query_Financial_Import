@@ -35,16 +35,16 @@ __Columns:__
    - 1000000000 and 9999999999 were specified to restrict the account number to ten characters.
 - DOB: =RANDBETWEEN(DATE(1975,1,1),DATE(2001,12,31))
    - This formula generates a date between 01/01/1975 and 12/31/2001.
-   - _This DOB was chosen so that all the accounts will be at least 21 years old as of 09/25/2023._
+   - This DOB was chosen so that all the accounts will be at least 21 years old as of 09/25/2023.
 - CHARGE_OFF_AMT: =RANDBETWEEN(567,2467)
-   - _These numbers were randomly selected._
+   - These numbers were randomly selected.
 - CHARGE_OFF_DATE: =RANDBETWEEN((EDATE([@DOB],12*21)),DATE(2023,9,24))
-  - _[@DOB] references the DOB field, ensuring the account was 21 years old._
+  - [@DOB] references the DOB field, ensuring the account was 21 years old.
 - BALANCE: =RANDBETWEEN(0,[@[CHARGE_OFF_AMT]])
-  - _[@[CHARGE_OFF_AMT]] references the CHARGE_OFF_AMT field, ensuring the BALANCE was <= CHARGE_OFF_AMT._
+  - [@[CHARGE_OFF_AMT]] references the CHARGE_OFF_AMT field, ensuring the BALANCE was <= CHARGE_OFF_AMT.
 - BALANCE_DATE: =RANDBETWEEN([@[CHARGE_OFF_DATE]],DATE(2023,9,24))
-  - _[@[CHARGE_OFF_DATE]] references the CHARGE_OFF_DATE field, ensuring the BALANCE_DATE was >= CHARGE_OFF_DATE._
-  - _2023,9,24 could be substituted with Today() as well._
+  - [@[CHARGE_OFF_DATE]] references the CHARGE_OFF_DATE field, ensuring the BALANCE_DATE was >= CHARGE_OFF_DATE.
+  - 2023,9,24 could be substituted with Today() as well.
 - FEES: =IF(([@[BALANCE_DATE]]-[@[CHARGE_OFF_DATE]])>1,RANDBETWEEN(1,50)+RANDBETWEEN(1,99)/100,0)
   - If the CHARGE_OFF_DATE is greater than a year, the BALANCE_DATE generates the fee.
 
