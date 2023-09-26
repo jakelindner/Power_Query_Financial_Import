@@ -29,7 +29,7 @@ __Formulas Used:__
  - EDATE          = EDATE generates a date based on the first variable + the second variable.
  - IF             = An if statement is a programming conditional statement that, if proved true, performs a function or displays information
 
-
+__Columns:__
 - ACCOUNT_NUMBER: =CONCATENATE("_",RANDBETWEEN(1000000000,9999999999))
    - The underscore is used so Excel sees the data as text, not a number. (This can be helpful professionally when storing account numbers; if you add an underscore to the front, excel will not reformat the number.)
    - 1000000000 and 9999999999 were specified to restrict the account number to ten characters.
