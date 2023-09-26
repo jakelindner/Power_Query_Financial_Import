@@ -1,10 +1,10 @@
-# PA_Financial_Import
+# Power_Query_Financial_Import
 ## Project Goal
 This project aims to show a business use case of Power Automate. By leveraging Power Automate, you can streamline the process of consolidating and transforming your employees' monthly account and balance files into a single Excel file. This consolidated file can be linked to a pivot table, providing an up-to-date data view.  
 
 ## Folder Structure
-1. The PA_Financial_Import Project Folder is the main folder for the project.
-2. The PA_Import_Folder is where the raw data is stored (PA=Power Automate).
+1. The PQ_Financial_Import Project Folder is the main folder for the project.
+2. The PQ_Import_Folder is where the raw data is stored (PQ=Power Query).
 3. The Power_Automate_Financial_Information Excel file is where you will utilize Power Automate to import the raw data.
 4. The Random_Account_Generator is the Excel file that, when refreshed, can create multiple files for testing.
 
@@ -19,7 +19,7 @@ The Random_Account_Generator allows users to create unlimited accounts to test t
 
 
 
-_In the professional world, place your raw data in the PA_Import_Folder instead of the sample data._
+_In the professional world, place your raw data in the PQ_Import_Folder instead of the sample data._
 
 ### Creation
 __Formulas Used:__
@@ -55,7 +55,7 @@ __Columns:__
 3. Select the Get Data dropdown.
 4. Hover over From File
 5. Select From Folder.
-6. Select the PA_Import_Folder created previously.
+6. Select the PQ_Import_Folder created previously.
 7. Select Combine & Transform under the Combine button.
 8. Remove the Changed Type on the right of your screen.
 9. Right Click Account_Number.
@@ -80,25 +80,15 @@ The table will be generated in the Excel File and can be refreshed anytime to pu
 The user can now create Pivot tables based on the table created by Power Query. In the future, when the data is updated/new files are uploaded, the table and the pivot table will refresh.
 
 In this example, a pivot table has a custom column that calculates =CHARGE_OFF_AMT-TOTAL_PAYED. This calculates how much money is owed per year of CHARGE_OFF, allowing the viewer to determine where the most money will be earned and the loan age. Paired with the Pivot Chart, it gives a visual representation of the pivot table.
-
-
 _This project is designed to teach specifically Power Automate; please refer to other study material for Pivot Tables & Pivot Charts._
 
 # Summary
 Power Automate is a business process automation (BPA) tool that can help your organization in several ways. Here are some of the benefits of using Power Automate:
 
-__Improved efficiency and productivity:__ By automating repetitive tasks, Power Automate streamlines your business processes, reduces errors, and accelerates high-level operations.
-
-
+__Improved efficiency and productivity:__ By automating repetitive tasks, Power Automate streamlines your business processes, reduces errors, and accelerates high-level operations1.
 __Reduced time and costs:__ Automation helps your business save time and money by eliminating manual paper processes and reallocating resources to more important matters.
-
-
 __Simple data and document management:__ Power Automate simplifies document management by organizing all your documents and data in a single location.
-
-
-__Visibility and transparency:__ Automation solutions ensure that best practices are followed, governance is enforced, and provide visibility into your business processes.
-
-
+__Visibility and transparency:__ Automation solutions ensure that best practices are followed, governance is enforced, and provide visibility into your business processes1.
 These are just a few of the many benefits that Power Automate offers to businesses. It can enhance operational outcomes, improve overall performance, and enable business transformation.
 
 Please note that this is just a brief summary, and there may be additional advantages specific to your organization’s needs.
