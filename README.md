@@ -13,5 +13,7 @@ The Random_Account_Generator allows users to create unlimited accounts to test t
 1. Open the Excel File
 2. Press the F9 Key
    - This will recalculate all the calculations in the workbook
-4. Click Save As and give the file a new name  
+4. Click Save As and give the file a new name
+
+   
 _In the professional world, place your raw data in the PA_Import_Folder instead of the sample data._
