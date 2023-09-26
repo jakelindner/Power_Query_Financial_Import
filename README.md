@@ -1,17 +1,17 @@
 # Power_Query_Financial_Import
 ## Project Goal
-This project aims to show a business use case of Power Automate. By leveraging Power Automate, you can streamline the process of consolidating and transforming your employees' monthly account and balance files into a single Excel file. This consolidated file can be linked to a pivot table, providing an up-to-date data view.  
+This project aims to show a business use case of Power Query. By leveraging Power Query, you can streamline the process of consolidating and transforming your employees' monthly account and balance files into a single Excel file. This consolidated file can be linked to a pivot table, providing an up-to-date data view.  
 
 ## Folder Structure
 1. The PQ_Financial_Import Project Folder is the main folder for the project.
-2. The PQ_Import_Folder is where the raw data is stored (PQ=Power Query).
-3. The Power_Automate_Financial_Information Excel file is where you will utilize Power Automate to import the raw data.
+2. The PQ_Import_Folder stores the raw data (PQ=Power Query).
+3. The Power_Automate_Financial_Information Excel file is where you will utilize Power Query to import the raw data.
 4. The Random_Account_Generator is the Excel file that, when refreshed, can create multiple files for testing.
 
 
 ## Random_Account_Generator
 ### Summary
-The Random_Account_Generator allows users to create unlimited accounts to test the Power Automate process. Follow the below steps:
+The Random_Account_Generator allows users to create unlimited accounts to test the Power Query process. Follow the below steps:
 1. Open the Excel File
 2. Press the F9 Key
    - This will recalculate all the calculations in the workbook
@@ -80,7 +80,7 @@ The table will be generated in the Excel File and can be refreshed anytime to pu
 The user can now create Pivot tables based on the table created by Power Query. In the future, when the data is updated/new files are uploaded, the table and the pivot table will refresh.
 
 In this example, a pivot table has a custom column that calculates =CHARGE_OFF_AMT-TOTAL_PAYED. This calculates how much money is owed per year of CHARGE_OFF, allowing the viewer to determine where the most money will be earned and the loan age. Paired with the Pivot Chart, it gives a visual representation of the pivot table.
-_This project is designed to teach specifically Power Automate; please refer to other study material for Pivot Tables & Pivot Charts._
+_This project is designed to teach specifically Power Query; please refer to other study material for Pivot Tables & Pivot Charts._
 
 # Summary
 Power Query is a data transformation and data preparation engine. It comes with a graphical interface for getting data from sources and a Power Query Editor for applying transformations.
