@@ -48,3 +48,34 @@ __Columns:__
 - FEES: =IF(([@[BALANCE_DATE]]-[@[CHARGE_OFF_DATE]])>1,RANDBETWEEN(1,50)+RANDBETWEEN(1,99)/100,0)
   - If the CHARGE_OFF_DATE is greater than a year, the BALANCE_DATE generates the fee.
 
+## Power_Automate_Financial_Information
+### Power Query
+1. Open the Excel file.
+2. Select Data from the headers.
+3. Select the Get Data dropdown.
+4. Hover over From File
+5. Select From Folder.
+6. Select the PA_Import_Folder created previously.
+7. Select Combine & Transform under the Combine button.
+8. Remove the Changed Type on the right of your screen.
+9. Right Click Account_Number.
+10. Select Split Column by Delimeter.
+11. Select Underscore.
+12. Select the 123 icon next to Account_Number.2 and change it to Text.
+13. Right-click and remove Account_Number.1
+14. Right-click the Account_Number.2 column and rename to Account_Number.
+15. By mirroring Step 12, correct the rest of the column types to either Date or Currency.
+16. Select Add Column from the top headers.
+17. Select Add Custom Column
+18. Name the Custom Column: TOTAL_PAYED
+19. Paste the following into the custom column formula area: =[BALANCE]+[FEES]
+20. Select Okay.
+21. Change the Type to Currency.
+22. Select the Home Tab.
+23. Select Close & Load.
+
+
+The table will be generated in the Excel File and can be refreshed anytime to pull in the new data.
+### Pivot Table & Chart
+The user can now create Pivot tables based on the table created by Power Query. In the future when the data is updated/new files are uploaded the table and the pivot table will refresh. In this example there is a pivot table that has a custom column which calculates =CHARGE_OFF_AMT-TOTAL_PAYED. This is used to calculate how much money is owed per year of CHARGE_OFF, allowing the viewer to determine where the most money top be earned is and the age of the loans. Paired with the Pivot Chart which gives a visual representation of the pivot table.
+_This project is designed to teach specifically Power Automate, please refer to other study material for Pivot Tables & Pivot Charts._
