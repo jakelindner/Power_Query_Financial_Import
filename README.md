@@ -80,6 +80,8 @@ The table will be generated in the Excel File and can be refreshed anytime to pu
 The user can now create Pivot tables based on the table created by Power Query. In the future, when the data is updated/new files are uploaded, the table and the pivot table will refresh.
 
 In this example, a pivot table has a custom column that calculates =CHARGE_OFF_AMT-TOTAL_PAYED. This calculates how much money is owed per year of CHARGE_OFF, allowing the viewer to determine where the most money will be earned and the loan age. Paired with the Pivot Chart, it gives a visual representation of the pivot table.
+
+
 _This project is designed to teach specifically Power Automate; please refer to other study material for Pivot Tables & Pivot Charts._
 
 # Summary
